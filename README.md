@@ -1,6 +1,6 @@
 # Efficient Data Storage for Predictive Modeling
 
-This project, part of the *Associate Data Scientist in Python* from DataCamp Carerer Track, involves optimizing the storage of a dataset from *Training Data Ltd.*, a leading online data science training provider. The goal is to preprocess and transform the dataset into an efficient format to facilitate faster and more scalable machine learning model development.
+This project, part of the [*Associate Data Scientist in Python*](https://app.datacamp.com/learn/career-tracks/associate-data-scientist-in-python) from DataCamp, involves optimizing the storage of a dataset from *Training Data Ltd.*, a leading online data science training provider. The goal is to preprocess and transform the dataset into an efficient format to facilitate faster and more scalable machine learning model development.
 
 ## Project Description
 
