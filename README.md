@@ -48,20 +48,20 @@ The preprocessing steps applied to the dataset resulted in significant memory op
 
 | Column Name            | Records Count | Original Dtype | Original Memory (bytes) | Transformed Dtype | Transformed Memory (bytes) | Memory Reduction (%) |
 |-------------------------|---------------|----------------|--------------------------|--------------------|----------------------------|-----------------------|
-| `student_id`           | 19,158        | int64          | 153,264                  | int32              | 76,632                     | 50.00                |
-| `city`                 | 19,158        | object         | 1,235,888                | category           | 31,246                     | 97.47                |
-| `city_development_index` | 19,158      | float64        | 153,264                  | float16            | 38,316                     | 75.00                |
-| `gender`               | 19,158        | object         | 1,040,573                | category           | 19,452                     | 98.13                |
-| `relevant_experience`  | 19,158        | object         | 1,527,274                | bool               | 19,158                     | 98.75                |
-| `enrolled_university`  | 19,158        | object         | 1,341,257                | category           | 19,482                     | 98.55                |
-| `education_level`      | 19,158        | object         | 1,231,558                | category           | 19,658                     | 98.40                |
-| `major_discipline`     | 19,158        | object         | 1,095,945                | category           | 19,718                     | 98.20                |
-| `experience`           | 19,158        | object         | 1,121,964                | category           | 21,004                     | 98.13                |
-| `company_size`         | 19,158        | object         | 1,023,519                | category           | 19,965                     | 98.05                |
-| `company_type`         | 19,158        | object         | 1,047,279                | category           | 19,733                     | 98.12                |
-| `last_new_job`         | 19,158        | object         | 1,113,264                | category           | 19,683                     | 98.23                |
-| `training_hours`       | 19,158        | int64          | 153,264                  | int32              | 76,632                     | 50.00                |
-| `job_change`           | 19,158        | float64        | 153,264                  | bool               | 19,158                     | 87.50                |
+| `student_id`           | 19,158        | int64          | 153,264                  | int32              | 76,632                     | **50.00**                |
+| `city`                 | 19,158        | object         | 1,235,888                | category           | 31,246                     | **97.47**                |
+| `city_development_index` | 19,158      | float64        | 153,264                  | float16            | 38,316                     | **75.00**                |
+| `gender`               | 19,158        | object         | 1,040,573                | category           | 19,452                     | **98.13**                |
+| `relevant_experience`  | 19,158        | object         | 1,527,274                | bool               | 19,158                     | **98.75**                |
+| `enrolled_university`  | 19,158        | object         | 1,341,257                | category           | 19,482                     | **98.55**                |
+| `education_level`      | 19,158        | object         | 1,231,558                | category           | 19,658                     | **98.40**                |
+| `major_discipline`     | 19,158        | object         | 1,095,945                | category           | 19,718                     | **98.20**                |
+| `experience`           | 19,158        | object         | 1,121,964                | category           | 21,004                     | **98.13**                |
+| `company_size`         | 19,158        | object         | 1,023,519                | category           | 19,965                     | **98.05**                |
+| `company_type`         | 19,158        | object         | 1,047,279                | category           | 19,733                     | **98.12**                |
+| `last_new_job`         | 19,158        | object         | 1,113,264                | category           | 19,683                     | **98.23**                |
+| `training_hours`       | 19,158        | int64          | 153,264                  | int32              | 76,632                     | **50.00**                |
+| `job_change`           | 19,158        | float64        | 153,264                  | bool               | 19,158                     | **87.50**                |
 
 ### Key Observations:
 - **Overall Memory Reduction**: Many columns achieved memory savings of over 90% due to dtype transformations, particularly the conversion of object columns to categories and reducing numeric precision (e.g., float64 to float16 and int64 to int32).
